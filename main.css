@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&display=swap');
+html{
+    box-sizing: border-box;
+    font-family: roboto;
+    font-size: 62.5%;
+}
+.container{
+    margin: 3rem auto auto auto;
+    width: 40%;
+    min-width: 60rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.list{
+    background-color: #edaa51;
+    border: 2px dashed #e3c3d4;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #edaa51, 2px 2px 6px 4px rgba(8, 0, 93, 0.5);
+    color: rgb(8, 0, 63);
+}
+.list__title{
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin: 2rem;   
+}
+.item__title{
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.item {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.list__items{
+padding:2rem 2rem 0 2rem;
+}
+.item__a{
+    text-align: center;
+}
+a{
+    color:rgb(8, 0, 63);
+    text-decoration: none;
+}
+a:hover{
+    color:white;
+}
+ul{
+    padding-inline-start: 1rem;
+}
+li{
+    border: 2px dashed #e3c3d4;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #edaa51, 2px 3px 8px 4px rgba(8, 0, 93, 0.5);
+    list-style-type:none;
+    padding: 1rem;
+}
