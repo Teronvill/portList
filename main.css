@@ -10,14 +10,37 @@ html{
     min-width: 60rem;
     text-align: center;
     font-size: 1.6rem;
+    
 }
 .list{
     background-color: #edaa51;
     border: 2px dashed #ffdaee;
     border-radius: 10px;
-    box-shadow: 0 0 0 4px #edaa51, 2px 2px 6px 4px rgba(8, 0, 93, 0.5);
-    color: rgb(8, 0, 63);
+    box-shadow: 0 0 0 4px #edaa51, 2px 2px 6px 4px rgba(93, 45, 0, 0.5);
+    color: rgb(92, 39, 26);
+    /* color: rgb(8, 0, 63); */
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    
 }
+
+/* .right {
+    position: relative;
+    animation: showRight 2s;
+}
+.left {
+    position: relative;
+    animation: showLeft 2s;
+} */
+@keyframes showLeft {
+    from {left:-100%;}
+    to {left:0;}
+    }
+@keyframes showRight {
+    from {right:-200%;}
+    to {right:0;}
+    }
+
 .list__title{
     font-size: 3.3rem;
     font-weight: 600;
@@ -34,18 +57,19 @@ html{
 .list__items{
 padding:2rem 2rem 0 2rem;
 }
+.item__text {
+    text-align: justify;
+}
 .item__text ul li{
-    margin: 20px 15px 10px 10px;
-  
-    
+    margin: 20px 15px 10px 10px; 
 }
 .item__a{
     text-align: center;
     margin-top: 10px;
-    
 }
 a{
-    color:rgb(0, 0, 172);
+    /* color:rgb(172, 49, 0); */
+    color:rgb(166, 47, 0);
     text-decoration: none;
     font-weight: 600;
 }
