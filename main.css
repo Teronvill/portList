@@ -3,13 +3,14 @@ html{
     box-sizing: border-box;
     font-family: roboto;
     font-size: 62.5%;
+    background-color: rgba(230, 227, 216, 0.372);
 }
 .container{
     margin: 3rem auto auto auto;
     width: 40%;
     min-width: 60rem;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     
 }
 .list{
@@ -18,29 +19,10 @@ html{
     border-radius: 10px;
     box-shadow: 0 0 0 4px #edaa51, 2px 2px 6px 4px rgba(93, 45, 0, 0.5);
     color: rgb(92, 39, 26);
-    /* color: rgb(8, 0, 63); */
     overflow: hidden;
     transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
     
 }
-
-/* .right {
-    position: relative;
-    animation: showRight 2s;
-}
-.left {
-    position: relative;
-    animation: showLeft 2s;
-} */
-@keyframes showLeft {
-    from {left:-100%;}
-    to {left:0;}
-    }
-@keyframes showRight {
-    from {right:-200%;}
-    to {right:0;}
-    }
-
 .list__title{
     font-size: 3.3rem;
     font-weight: 600;
@@ -75,7 +57,6 @@ a{
 }
 a:hover{
     color:white;
-
 }
 ul{
     padding-inline-start: 1rem;
@@ -86,4 +67,13 @@ li{
     box-shadow: 0 0 0 4px #edaa51, 2px 3px 8px 4px rgba(8, 0, 93, 0.5);
     list-style-type:none;
     padding: 1rem;
+}
+.list{
+font-size: 0;
+animation: ani 2s forwards;
+}
+
+@keyframes ani {
+0% {font-size: 0;}
+100% {font-size: 16px;}
 }
